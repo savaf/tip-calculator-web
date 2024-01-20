@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+  .btn {
+    border-radius: 5px;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    &.btn--primary {
+      @apply bg-primary text-primary-dark;
+
+      &:hover, &:active {
+        @apply bg-primary-light text-primary-dark;
+      }
+    }
+
+    &.btn--secondary {
+      @apply bg-primary-dark text-white;
+
+      &:hover, &:active {
+        @apply bg-primary-light text-primary-dark;
+      }
+    }
+  }
+}
