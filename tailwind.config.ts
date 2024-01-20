@@ -15,6 +15,8 @@ export default <Partial<Config>>{
       colors: {
         primary: "#26C0AB",
         "primary-light": "#9FE8DF",
+        success: "#26C2AE",
+        danger: "#E17052",
         "primary-dark": "#00474B",
         "primary-grayish": "#7F9C9F",
         "primary-grayish-dark": "#5E7A7D",
@@ -35,6 +37,7 @@ export default <Partial<Config>>{
       },
       borderRadius: {
         "main-container": "25px",
+        "default": "5px",
         "4xl": "2rem",
         "5xl": "3rem",
       },
@@ -46,6 +49,9 @@ export default <Partial<Config>>{
       },
       boxShadow: {
         "main-container": "0px 32px 43px 0px rgba(79, 166, 175, 0.20);",
+      },
+      spacing: {
+        4.5: "1.125rem",
       },
     },
   },

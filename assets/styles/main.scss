@@ -1,9 +1,8 @@
 html {
-    @apply bg-primary-grayish-light;
+    @apply bg-primary-grayish-light text-primary-grayish-dark;
 }
 
 body {
     overflow: hidden;
     display: contents;
-    font-size: 24px;
 }

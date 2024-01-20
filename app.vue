@@ -10,7 +10,7 @@ import IconPerson from '@/assets/icons/icon-person.svg?data'
       <img src="/logo.svg" alt="Splitter's Logo" class="app-logo" />
     </header>
     <form class="container bg-white w-full p-8
-      rounded-main-container shadow-main-container
+      rounded-t-main-container desktop:rounded-main-container shadow-main-container
       flex flex-col desktop:flex-row justify-between
       space-y-8 desktop:space-y-0
       desktop:gap-x-12
@@ -18,36 +18,37 @@ import IconPerson from '@/assets/icons/icon-person.svg?data'
 
       <div class="space-y-8 desktop:mb-4">
 
-        <CommonsNumberField
+        <CommonsTextField
           label="Bill"
           id="bill"
           placeholder="0"
           errorMessage="Can't be zero"
           :icon="IconDollar"
+          type="number"
         />
 
         <div>
-          <label for="tip">Tip %</label>
-
+          <label for="tip" class="text-base">Tip %</label>
           <div
             id="tip"
-            class="grid grid-cols-2 desktop:grid-cols-3 gap-4 desktop:gap-x-3"
-          role="group" aria-label="Select a tip or type a custom percentage">
+            class="mt-4 grid grid-cols-2 desktop:grid-cols-3 gap-4 desktop:gap-x-3"
+            role="group" aria-label="Select a tip or type a custom percentage">
             <CommonsButton variant="secondary">5%</CommonsButton>
             <CommonsButton variant="secondary">10%</CommonsButton>
             <CommonsButton variant="secondary">15%</CommonsButton>
             <CommonsButton variant="secondary">25%</CommonsButton>
             <CommonsButton variant="secondary">50%</CommonsButton>
-            <input type="number" placeholder="Custom" />
+            <CommonsTextField type="number" placeholder="Custom" />
           </div>
         </div>
 
-        <CommonsNumberField
+        <CommonsTextField
           label="Number of People"
           id="people"
           placeholder="0"
           errorMessage="Can't be zero"
           :icon="IconPerson"
+          type="number"
         />
 
 
