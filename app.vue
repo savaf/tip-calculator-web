@@ -78,51 +78,6 @@ import IconPerson from '@/assets/icons/icon-person.svg?data'
         <CommonsButton variant="primary" class="w-full mt-8">Reset</CommonsButton>
 
       </div>
-      <!-- <div class="row">
-        <div class="col-sm-6">
-          <div>
-            <label for="bill">Bill</label>
-            <input type="number" id="bill" v-model="bill" />
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div>
-            <label for="tip">Tip %</label>
-            <select id="tip" v-model="tip">
-              <option value="5">5%</option>
-              <option value="10">10%</option>
-              <option value="15">15%</option>
-              <option value="25">25%</option>
-              <option value="50">50%</option>
-              <option value="custom">Custom</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <div>
-            <label for="people">Number of People</label>
-            <input type="number" id="people" v-model="people" />
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div>
-            <label for="customTip">Custom Tip %</label>
-            <input type="number" id="customTip" v-model="customTip" />
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <h3>Tip Amount</h3>
-          <p>{{ tipAmount }}</p>
-        </div>
-        <div class="col-sm-6">
-          <h3>Total</h3>
-          <p>{{ total }}</p>
-        </div>
-      </div> -->
     </form>
   </div>
 
