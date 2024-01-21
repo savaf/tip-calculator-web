@@ -9,14 +9,14 @@ import IconPerson from '@/assets/icons/icon-person.svg?data'
       <h1 class="sr-only">Tip Calculator</h1>
       <img src="/logo.svg" alt="Splitter's Logo" class="app-logo" />
     </header>
-    <form class="container bg-white w-full p-8
+    <form class="container bg-white w-full desktop:p-8 desktop:pl-12 p-6
       rounded-t-main-container desktop:rounded-main-container shadow-main-container
       flex flex-col desktop:flex-row justify-between
       space-y-8 desktop:space-y-0
       desktop:gap-x-12
     ">
 
-      <div class="space-y-8 desktop:mb-4">
+      <div class="space-y-8 desktop:mb-4 w-full">
 
         <CommonsTextField
           label="Bill"
@@ -54,17 +54,28 @@ import IconPerson from '@/assets/icons/icon-person.svg?data'
 
       </div>
 
-      <div class="bg-primary-dark text-white pt-10 p-6">
-        <p>
-          Tip Amount
-        / person
-        </p>
-        <p>
-          Total
-                / person
-        </p>
+      <div class="bg-primary-dark text-white pt-10 p-6  w-full rounded-2xl relative flex flex-col justify-between">
 
-        <CommonsButton variant="primary" class="w-full">Reset</CommonsButton>
+        <div class="space-y-[21px]">
+          <p class="flex justify-between mt-0">
+          <span class="text-base">
+            Tip Amount
+            <br />
+            <span class="text-xs text-primary-grayish">/ person</span>
+          </span>
+          <span class="text-3xl font-bold text-primary">$0.00</span>
+        </p>
+        <p class="flex justify-between">
+          <span class="text-base">
+            Total
+            <br />
+            <span class="text-xs text-primary-grayish">/ person</span>
+          </span>
+          <span class="text-3xl font-bold text-primary">$0.00</span>
+        </p>
+        </div>
+
+        <CommonsButton variant="primary" class="w-full mt-8">Reset</CommonsButton>
 
       </div>
       <!-- <div class="row">
