@@ -1,17 +1,19 @@
 <script setup lang="ts">
 export interface TextFieldProps {
-  label: string
-  id: string
-  value: string
-  placeholder: string
-  errorMessage: string
-  icon: string
+  label?: string
+  id?: string
+  value?: string
+  placeholder?: string
+  errorMessage?: string
+  icon?: string
   type: string
 }
 
 const props = withDefaults(defineProps<TextFieldProps>(), {
   type: 'text',
 });
+
+const model = defineModel()
 </script>
 
 <template>
@@ -29,8 +31,7 @@ const props = withDefaults(defineProps<TextFieldProps>(), {
           :type="type"
           :id="id"
           :placeholder="placeholder"
-          :value="value"
-          @input="$emit('update:value', $event.target.value)"
+          v-model="model"
           class="text-field w-full"
           :class="{
             'text-field--error': errorMessage,
