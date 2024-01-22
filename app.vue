@@ -84,7 +84,7 @@ function resetForm () {
   <div id="app" class="mx-auto max-w-main-container prose">
     <header class="text-center w-full">
       <h1 class="sr-only">Tip Calculator</h1>
-      <img src="/logo.svg" alt="Splitter's Logo" class="app-logo" />
+      <img src="~/assets/logo.svg" alt="Splitter's Logo" class="app-logo" />
     </header>
     <form class="container bg-white w-full desktop:p-8 desktop:pl-12 p-6
       rounded-t-main-container desktop:rounded-main-container shadow-main-container
