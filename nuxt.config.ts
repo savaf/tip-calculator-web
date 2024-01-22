@@ -10,7 +10,12 @@ export default defineNuxtConfig({
     viewTransition: true,
   },
 
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/google-fonts", "nuxt-icon"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/google-fonts",
+    "nuxt-icon",
+    '@nuxt/test-utils/module'
+  ],
 
   routeRules: {
     "/**": isDev
