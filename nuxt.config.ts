@@ -4,10 +4,6 @@ const isDev = process.env.NODE_ENV === "development";
 export default defineNuxtConfig({
   ssr: false,
 
-  nitro: {
-    preset: 'github_pages'
-  }
-
   devtools: { enabled: true },
 
   experimental: {
@@ -47,6 +43,7 @@ export default defineNuxtConfig({
 
   nitro: {
     static: !isDev,
+    preset: 'github_pages'
     // prerender: {
     //   crawlLinks: true,
     //   routes: ["/sitemap.xml", "/robots.txt"],
