@@ -2,7 +2,7 @@ const isDev = process.env.NODE_ENV === "development";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: false,
+  // ssr: false,
 
   devtools: { enabled: true },
 
@@ -18,17 +18,17 @@ export default defineNuxtConfig({
   ],
 
   routeRules: {
-    "/**": isDev
-      ? {}
-      : {
-          // isr: 60,
-          cache: {
-            swr: true,
-            maxAge: 120,
-            staleMaxAge: 60,
-            headersOnly: true,
-          },
-        },
+    // "/**": isDev
+    //   ? {}
+    //   : {
+    //       // isr: 60,
+    //       cache: {
+    //         swr: true,
+    //         maxAge: 120,
+    //         staleMaxAge: 60,
+    //         headersOnly: true,
+    //       },
+    //     },
     // "/": isDev
     //   ? {}
     //   : {
@@ -43,7 +43,7 @@ export default defineNuxtConfig({
 
   nitro: {
     static: !isDev,
-    preset: 'github_pages'
+    // preset: 'github_pages'
     // prerender: {
     //   crawlLinks: true,
     //   routes: ["/sitemap.xml", "/robots.txt"],
@@ -53,6 +53,8 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: "page", mode: "out-in" },
     layoutTransition: { name: "layout", mode: "out-in" },
+    baseURL: '/tip-calculator-web/', // baseURL: '/<repository>/'
+    buildAssetsDir: 'assets', // don't use "_" at the begining of the folder name to avoids nojkill conflict
     head: {
       title: "Splitter",
       htmlAttrs: { lang: "en" },
